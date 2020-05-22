@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
 
-import { Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Home from './components/Home';
 import OrderForm from './components/OrderForm';
 
@@ -17,17 +17,16 @@ const App = () => {
       <Link to="/pizza" exact className="order-link">
           Order Form
       </Link>
-
-      <Route
-        path="/"
-        component={Home}
-        /> 
-      <Route
-        exact path="/pizza"
-        component={OrderForm}
-        />
-        <Home /> 
-        <OrderForm />
+      
+        <Route
+          exact path="/"
+          component={Home}
+          /> 
+        <Route
+           path="/pizza"
+          component={OrderForm}
+          />
+      
     </div>
     </>
   );
