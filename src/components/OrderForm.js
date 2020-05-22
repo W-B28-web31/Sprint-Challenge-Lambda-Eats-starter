@@ -8,6 +8,7 @@ import * as yup from "yup";
 });
 
 const OrderForm = props => {
+    console.log(props)
 
     const [ buttonDisabled, setButtonDisabled ] = useState(true)
 
@@ -15,9 +16,10 @@ const OrderForm = props => {
     const[ formState, setFormState ] = useState({
         name:'',
         size:'',
-        sauce:'',
-        toppings:'',
-        gluten: false,
+        pepperoni:'',
+        mushrooms:'',
+        peppers:'',
+        sausage:'',
         specialInstructions:''
     })
 
@@ -25,9 +27,10 @@ const OrderForm = props => {
   const [errors, setErrors] = useState({
         name:'',
         size:'',
-        sauce:'',
-        toppings:'',
-        gluten: false,
+        pepperoni:'',
+        mushrooms:'',
+        peppers:'',
+        sausage:'',
         specialInstructions:''
   });
 
