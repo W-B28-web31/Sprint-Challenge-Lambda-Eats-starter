@@ -19,7 +19,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 
 2. How would you explain form validation to someone who has never programmed before?
-    Form validation is a fail-safe to ensure that the user has entered all the necessary data into the form and the pressed the Submit button.
+    Form validation is a fail-safe to ensure that the user has entered all the necessary data into the form and thensubmitted via a Submit button.
 
 
 3. In 1-2 sentences, define end to end testing.
